@@ -1,0 +1,6 @@
+@CommentReviewProject_HostAddress = http://localhost:5192
+
+GET {{CommentReviewProject_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
