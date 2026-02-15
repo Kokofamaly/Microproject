@@ -1,0 +1,1 @@
+namespace MyProject.Application.DTOs;
