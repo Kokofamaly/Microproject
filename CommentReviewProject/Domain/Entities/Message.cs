@@ -8,8 +8,17 @@ public class Message
     public Guid UserId { get; set; }
     public User? User { get; set; }
 
-    private Message()
+    public Message()
     {
+    }
+
+    public Message(string? headline, string? bodyText, User? user)
+    {
+            Headline = headline;
+            BodyText = bodyText;
+            CreatedAt = DateTimeOffset.UtcNow;
+            UserId = User!.Id;
+            User = user; 
     }
 
     public void CreateMessage(string? headline, string? bodyText, User? user)
